@@ -91,6 +91,13 @@ public class Maths {
     }
 
 
+    public static double L2Norm(double[] a) {
+        double result = 0.0;
+        for (double v : a)
+            result += square(v);
+        return Math.sqrt(result);
+    }
+
     public static double KLDistance(double[] p, double[] q) {
         int len = p.length;
         double kl = 0;

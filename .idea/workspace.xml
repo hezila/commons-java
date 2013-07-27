@@ -1,9 +1,175 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="392f45c0-36d1-4da6-b39f-6bae9fe5579e" name="Default" comment="" />
+    <list default="true" id="392f45c0-36d1-4da6-b39f-6bae9fe5579e" name="Default" comment="">
+      <change type="DELETED" beforePath="C:\Documents and Settings\fwang\My Documents\Dropbox\workspace\commons-java\src\test\java\numb3r3-package\AppTest.java" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/numb3r3/common/concurrent/executors/AbstractObservableFuture.java" afterPath="$PROJECT_DIR$/src/main/java/com/numb3r3/common/concurrent/executors/AbstractObservableFuture.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/numb3r3/common/concurrent/throttler/AccumulativeRunnable.java" afterPath="$PROJECT_DIR$/src/main/java/com/numb3r3/common/concurrent/throttler/AccumulativeRunnable.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/numb3r3/common/opt/ArrayMath.java" afterPath="$PROJECT_DIR$/src/main/java/com/numb3r3/common/opt/ArrayMath.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/numb3r3/common/opt/BacktrackingLineSearcher.java" afterPath="$PROJECT_DIR$/src/main/java/com/numb3r3/common/opt/BacktrackingLineSearcher.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/numb3r3/common/concurrent/executors/CachedThreadPool.java" afterPath="$PROJECT_DIR$/src/main/java/com/numb3r3/common/concurrent/executors/CachedThreadPool.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/numb3r3/common/concurrent/executors/ConcurrentFoldingFoldingExecutor.java" afterPath="$PROJECT_DIR$/src/main/java/com/numb3r3/common/concurrent/executors/ConcurrentFoldingFoldingExecutor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/numb3r3/common/util/Counter.java" afterPath="$PROJECT_DIR$/src/main/java/com/numb3r3/common/util/Counter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/numb3r3/common/opt/DifferentiableFunction.java" afterPath="$PROJECT_DIR$/src/main/java/com/numb3r3/common/opt/DifferentiableFunction.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/numb3r3/common/opt/DifferentiableMatrixFunction.java" afterPath="$PROJECT_DIR$/src/main/java/com/numb3r3/common/opt/DifferentiableMatrixFunction.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/numb3r3/common/math/stat/Distribution.java" afterPath="$PROJECT_DIR$/src/main/java/com/numb3r3/common/math/stat/Distribution.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/numb3r3/common/opt/DoubleArrays.java" afterPath="$PROJECT_DIR$/src/main/java/com/numb3r3/common/opt/DoubleArrays.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/numb3r3/common/concurrent/util/Duplicatable.java" afterPath="$PROJECT_DIR$/src/main/java/com/numb3r3/common/concurrent/util/Duplicatable.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/numb3r3/common/ErrorProcessor.java" afterPath="$PROJECT_DIR$/src/main/java/com/numb3r3/common/ErrorProcessor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/numb3r3/common/io/FileUtils.java" afterPath="$PROJECT_DIR$/src/main/java/com/numb3r3/common/io/FileUtils.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/numb3r3/common/concurrent/executors/FoldingExecutor.java" afterPath="$PROJECT_DIR$/src/main/java/com/numb3r3/common/concurrent/executors/FoldingExecutor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/numb3r3/common/math/stat/Frequency.java" afterPath="$PROJECT_DIR$/src/main/java/com/numb3r3/common/math/stat/Frequency.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/numb3r3/common/opt/Function.java" afterPath="$PROJECT_DIR$/src/main/java/com/numb3r3/common/opt/Function.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/numb3r3/common/math/stat/Gaussian.java" afterPath="$PROJECT_DIR$/src/main/java/com/numb3r3/common/math/stat/Gaussian.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/numb3r3/common/opt/GradientChecker.java" afterPath="$PROJECT_DIR$/src/main/java/com/numb3r3/common/opt/GradientChecker.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/numb3r3/common/opt/GradientLineSearcher.java" afterPath="$PROJECT_DIR$/src/main/java/com/numb3r3/common/opt/GradientLineSearcher.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/numb3r3/common/opt/GradientMinimizer.java" afterPath="$PROJECT_DIR$/src/main/java/com/numb3r3/common/opt/GradientMinimizer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/numb3r3/common/concurrent/IExecutorProvider.java" afterPath="$PROJECT_DIR$/src/main/java/com/numb3r3/common/concurrent/IExecutorProvider.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/numb3r3/common/concurrent/IScheduledExecutorProvider.java" afterPath="$PROJECT_DIR$/src/main/java/com/numb3r3/common/concurrent/IScheduledExecutorProvider.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/numb3r3/common/math/local/InMemoryJBlasMatrix.java" afterPath="$PROJECT_DIR$/src/main/java/com/numb3r3/common/math/local/InMemoryJBlasMatrix.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/numb3r3/common/Index.java" afterPath="$PROJECT_DIR$/src/main/java/com/numb3r3/common/Index.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/numb3r3/common/concurrent/throttler/InvocationCombiner.java" afterPath="$PROJECT_DIR$/src/main/java/com/numb3r3/common/concurrent/throttler/InvocationCombiner.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/numb3r3/common/collection/IterableAdapter.java" afterPath="$PROJECT_DIR$/src/main/java/com/numb3r3/common/collection/IterableAdapter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/numb3r3/common/optimization/lbfgs/LBFGS.java" afterPath="$PROJECT_DIR$/src/main/java/com/numb3r3/common/optimization/lbfgs/LBFGS.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/numb3r3/common/opt/LBFGSMinimizer.java" afterPath="$PROJECT_DIR$/src/main/java/com/numb3r3/common/opt/LBFGSMinimizer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/numb3r3/common/MathUtil.java" afterPath="$PROJECT_DIR$/src/main/java/com/numb3r3/common/MathUtil.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/numb3r3/common/math/Maths.java" afterPath="$PROJECT_DIR$/src/main/java/com/numb3r3/common/math/Maths.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/numb3r3/common/math/Matrix.java" afterPath="$PROJECT_DIR$/src/main/java/com/numb3r3/common/math/Matrix.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/numb3r3/common/optimization/lbfgs/Mcsrch.java" afterPath="$PROJECT_DIR$/src/main/java/com/numb3r3/common/optimization/lbfgs/Mcsrch.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/numb3r3/common/opt/MemoizedDifferentiableFunction.java" afterPath="$PROJECT_DIR$/src/main/java/com/numb3r3/common/opt/MemoizedDifferentiableFunction.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/numb3r3/common/opt/Minimizer.java" afterPath="$PROJECT_DIR$/src/main/java/com/numb3r3/common/opt/Minimizer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/numb3r3/common/math/stat/MultivariateDistribution.java" afterPath="$PROJECT_DIR$/src/main/java/com/numb3r3/common/math/stat/MultivariateDistribution.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/numb3r3/common/concurrent/NamedThreadFactory.java" afterPath="$PROJECT_DIR$/src/main/java/com/numb3r3/common/concurrent/NamedThreadFactory.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/numb3r3/common/math/local/NativeDoubleMatrix.java" afterPath="$PROJECT_DIR$/src/main/java/com/numb3r3/common/math/local/NativeDoubleMatrix.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/numb3r3/common/math/local/NativeIntegerMatrix.java" afterPath="$PROJECT_DIR$/src/main/java/com/numb3r3/common/math/local/NativeIntegerMatrix.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/numb3r3/common/opt/Norm1Tanh.java" afterPath="$PROJECT_DIR$/src/main/java/com/numb3r3/common/opt/Norm1Tanh.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/numb3r3/common/optimization/lbfgs/ObjectiveFunction.java" afterPath="$PROJECT_DIR$/src/main/java/com/numb3r3/common/optimization/lbfgs/ObjectiveFunction.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/numb3r3/common/concurrent/executors/ObservableFuture.java" afterPath="$PROJECT_DIR$/src/main/java/com/numb3r3/common/concurrent/executors/ObservableFuture.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/numb3r3/common/concurrent/executors/ObservableFuturesThreadPool.java" afterPath="$PROJECT_DIR$/src/main/java/com/numb3r3/common/concurrent/executors/ObservableFuturesThreadPool.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/numb3r3/common/OnlineArgSort.java" afterPath="$PROJECT_DIR$/src/main/java/com/numb3r3/common/OnlineArgSort.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/numb3r3/common/Pair.java" afterPath="$PROJECT_DIR$/src/main/java/com/numb3r3/common/Pair.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/numb3r3/common/concurrent/util/Pair.java" afterPath="$PROJECT_DIR$/src/main/java/com/numb3r3/common/concurrent/util/Pair.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/numb3r3/common/concurrent/Parallel.java" afterPath="$PROJECT_DIR$/src/main/java/com/numb3r3/common/concurrent/Parallel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/numb3r3/common/metrics/PearsonCorrelation.java" afterPath="$PROJECT_DIR$/src/main/java/com/numb3r3/common/metrics/PearsonCorrelation.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/numb3r3/common/metrics/PrecisionRecallState.java" afterPath="$PROJECT_DIR$/src/main/java/com/numb3r3/common/metrics/PrecisionRecallState.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/numb3r3/common/opt/QNMinimizer.java" afterPath="$PROJECT_DIR$/src/main/java/com/numb3r3/common/opt/QNMinimizer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/numb3r3/common/Quicksorter.java" afterPath="$PROJECT_DIR$/src/main/java/com/numb3r3/common/Quicksorter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/numb3r3/common/math/stat/RandomUtil.java" afterPath="$PROJECT_DIR$/src/main/java/com/numb3r3/common/math/stat/RandomUtil.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/numb3r3/common/metrics/RankingMetric.java" afterPath="$PROJECT_DIR$/src/main/java/com/numb3r3/common/metrics/RankingMetric.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/numb3r3/common/concurrent/util/Reducer.java" afterPath="$PROJECT_DIR$/src/main/java/com/numb3r3/common/concurrent/util/Reducer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/numb3r3/common/concurrent/util/Reducible.java" afterPath="$PROJECT_DIR$/src/main/java/com/numb3r3/common/concurrent/util/Reducible.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/numb3r3/common/opt/Sigmoid.java" afterPath="$PROJECT_DIR$/src/main/java/com/numb3r3/common/opt/Sigmoid.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/numb3r3/common/opt/SloppyMath.java" afterPath="$PROJECT_DIR$/src/main/java/com/numb3r3/common/opt/SloppyMath.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/numb3r3/common/opt/Softmax.java" afterPath="$PROJECT_DIR$/src/main/java/com/numb3r3/common/opt/Softmax.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/numb3r3/common/collection/SortedList.java" afterPath="$PROJECT_DIR$/src/main/java/com/numb3r3/common/collection/SortedList.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/numb3r3/common/math/stat/Statistics.java" afterPath="$PROJECT_DIR$/src/main/java/com/numb3r3/common/math/stat/Statistics.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/numb3r3/common/io/StdIn.java" afterPath="$PROJECT_DIR$/src/main/java/com/numb3r3/common/io/StdIn.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/numb3r3/common/io/StdOut.java" afterPath="$PROJECT_DIR$/src/main/java/com/numb3r3/common/io/StdOut.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/numb3r3/common/StringUtil.java" afterPath="$PROJECT_DIR$/src/main/java/com/numb3r3/common/StringUtil.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/numb3r3/common/concurrent/executors/SwingEDTAsExecutor.java" afterPath="$PROJECT_DIR$/src/main/java/com/numb3r3/common/concurrent/executors/SwingEDTAsExecutor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/numb3r3/common/opt/Tanh.java" afterPath="$PROJECT_DIR$/src/main/java/com/numb3r3/common/opt/Tanh.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/numb3r3/common/optimization/lbfgs/TestLBFGS.java" afterPath="$PROJECT_DIR$/src/main/java/com/numb3r3/common/optimization/lbfgs/TestLBFGS.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/numb3r3/common/concurrent/ThreadPool.java" afterPath="$PROJECT_DIR$/src/main/java/com/numb3r3/common/concurrent/ThreadPool.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/numb3r3/common/concurrent/throttler/ThrottleRunnable.java" afterPath="$PROJECT_DIR$/src/main/java/com/numb3r3/common/concurrent/throttler/ThrottleRunnable.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/numb3r3/common/Timer.java" afterPath="$PROJECT_DIR$/src/main/java/com/numb3r3/common/Timer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/numb3r3/common/Triplet.java" afterPath="$PROJECT_DIR$/src/main/java/com/numb3r3/common/Triplet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/numb3r3/common/Utils.java" afterPath="$PROJECT_DIR$/src/main/java/com/numb3r3/common/Utils.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/commons-java.iml" afterPath="$PROJECT_DIR$/commons-java.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
+    <list id="ac02d52e-c970-49c5-97d2-10a36200ada8" name="Rejected commit: Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/numb3r3/common/collection/ArrayUtil.java" afterPath="$PROJECT_DIR$/src/main/java/com/numb3r3/common/collection/ArrayUtil.java" />
+    </list>
     <ignored path="commons-java.iws" />
     <ignored path=".idea/workspace.xml" />
+    <file path="$PROJECT_DIR$/../optimization-java/src/main/java/com/numb3r3/opt/stopCriteria/AverageValueDifference.java" changelist="392f45c0-36d1-4da6-b39f-6bae9fe5579e" time="1374900450646" ignored="false" />
+    <file path="/AverageValueDifference.java" changelist="392f45c0-36d1-4da6-b39f-6bae9fe5579e" time="1374899438856" ignored="false" />
+    <file path="$PROJECT_DIR$/../optimization-java/src/main/java/com/numb3r3/opt/stopCriteria/ProjectedGradientL2Norm.java" changelist="392f45c0-36d1-4da6-b39f-6bae9fe5579e" time="1374902387685" ignored="false" />
+    <file path="$PROJECT_DIR$/../optimization-java/src/main/java/com/numb3r3/opt/stopCriteria/StopingCriteria.java" changelist="392f45c0-36d1-4da6-b39f-6bae9fe5579e" time="1374900450646" ignored="false" />
+    <file path="$PROJECT_DIR$/../optimization-java/src/main/java/com/numb3r3/opt/stopCriteria/NormalizedProjectedGradientL2Norm.java" changelist="392f45c0-36d1-4da6-b39f-6bae9fe5579e" time="1374902440076" ignored="false" />
+    <file path="$PROJECT_DIR$/../optimization-java/src/main/java/com/numb3r3/opt/stopCriteria/GradientL2Norm.java" changelist="392f45c0-36d1-4da6-b39f-6bae9fe5579e" time="1374902483515" ignored="false" />
+    <file path="$PROJECT_DIR$/../optimization-java/src/main/java/com/numb3r3/optimization/gradientBasedMethods/AbstractGradientBaseMethod.java" changelist="392f45c0-36d1-4da6-b39f-6bae9fe5579e" time="1374900369097" ignored="false" />
+    <file path="$PROJECT_DIR$/../optimization-java/src/main/java/com/numb3r3/optimization/gradientBasedMethods/LBFGS.java" changelist="392f45c0-36d1-4da6-b39f-6bae9fe5579e" time="1374900369097" ignored="false" />
+    <file path="$PROJECT_DIR$/../optimization-java/src/main/java/com/numb3r3/optimization/gradientBasedMethods/ProjectedGradientDescent.java" changelist="392f45c0-36d1-4da6-b39f-6bae9fe5579e" time="1374900369097" ignored="false" />
+    <file path="$PROJECT_DIR$/../optimization-java/src/main/java/com/numb3r3/optimization/examples/GeneralizedRosenbrock.java" changelist="392f45c0-36d1-4da6-b39f-6bae9fe5579e" time="1374900495116" ignored="false" />
+    <file path="$PROJECT_DIR$/../optimization-java/src/main/java/com/numb3r3/optimization/gradientBasedMethods/ConjugateGradient.java" changelist="392f45c0-36d1-4da6-b39f-6bae9fe5579e" time="1374900369097" ignored="false" />
+    <file path="$PROJECT_DIR$/../optimization-java/src/main/java/com/numb3r3/opt/stopCriteria/NormalizedGradientL2Norm.java" changelist="392f45c0-36d1-4da6-b39f-6bae9fe5579e" time="1374902465124" ignored="false" />
+    <file path="$PROJECT_DIR$/../optimization-java/src/main/java/com/numb3r3/optimization/examples/x2y2.java" changelist="392f45c0-36d1-4da6-b39f-6bae9fe5579e" time="1374900480412" ignored="false" />
+    <file path="$PROJECT_DIR$/../optimization-java/src/main/java/com/numb3r3/opt/stopCriteria/NormalizedValueDifference.java" changelist="392f45c0-36d1-4da6-b39f-6bae9fe5579e" time="1374900450646" ignored="false" />
+    <file path="$PROJECT_DIR$/../optimization-java/src/main/java/com/numb3r3/opt/stopCriteria/CompositeStopingCriteria.java" changelist="392f45c0-36d1-4da6-b39f-6bae9fe5579e" time="1374900450646" ignored="false" />
+    <file path="$PROJECT_DIR$/../optimization-java/src/main/java/com/numb3r3/optimization/examples/x2y2WithConstraints.java" changelist="392f45c0-36d1-4da6-b39f-6bae9fe5579e" time="1374900480412" ignored="false" />
+    <file path="$PROJECT_DIR$/../optimization-java/src/main/java/com/numb3r3/optimization/gradientBasedMethods/Optimizer.java" changelist="392f45c0-36d1-4da6-b39f-6bae9fe5579e" time="1374899518733" ignored="false" />
+    <file path="$PROJECT_DIR$/../optimization-java/pom.xml" changelist="392f45c0-36d1-4da6-b39f-6bae9fe5579e" time="1374899581881" ignored="false" />
+    <file path="/pom.xml" changelist="392f45c0-36d1-4da6-b39f-6bae9fe5579e" time="1374899574115" ignored="false" />
+    <file path="/Maths.java" changelist="392f45c0-36d1-4da6-b39f-6bae9fe5579e" time="1374900123215" ignored="false" />
+    <file path="/Dummy.txt" changelist="392f45c0-36d1-4da6-b39f-6bae9fe5579e" time="1374903669238" ignored="false" />
+    <file path="/BoundsProjection.java" changelist="392f45c0-36d1-4da6-b39f-6bae9fe5579e" time="1374900325986" ignored="false" />
+    <file path="$PROJECT_DIR$/../optimization-java/src/main/java/com/numb3r3/optimization/projections/BoundsProjection.java" changelist="392f45c0-36d1-4da6-b39f-6bae9fe5579e" time="1374900281266" ignored="false" />
+    <file path="$PROJECT_DIR$/../optimization-java/src/main/java/com/numb3r3/optimization/examples/SimplexOpt.java" changelist="392f45c0-36d1-4da6-b39f-6bae9fe5579e" time="1374900450646" ignored="false" />
+    <file path="$PROJECT_DIR$/../optimization-java/src/main/java/com/numb3r3/opt/projections/Projection.java" changelist="392f45c0-36d1-4da6-b39f-6bae9fe5579e" time="1374901141598" ignored="false" />
+    <file path="$PROJECT_DIR$/../optimization-java/src/main/java/com/numb3r3/opt/projections/SimplexProjection.java" changelist="392f45c0-36d1-4da6-b39f-6bae9fe5579e" time="1374902255510" ignored="false" />
+    <file path="$PROJECT_DIR$/../optimization-java/src/main/java/com/numb3r3/opt/projections/BoundsProjection.java" changelist="392f45c0-36d1-4da6-b39f-6bae9fe5579e" time="1374900325986" ignored="false" />
+    <file path="/ArmijoLineSearchMinimization.java" changelist="392f45c0-36d1-4da6-b39f-6bae9fe5579e" time="1374900387988" ignored="false" />
+    <file path="$PROJECT_DIR$/../optimization-java/src/main/java/com/numb3r3/optimization/linesearch/ArmijoLineSearchMinimization.java" changelist="392f45c0-36d1-4da6-b39f-6bae9fe5579e" time="1374900352221" ignored="false" />
+    <file path="$PROJECT_DIR$/../optimization-java/src/main/java/com/numb3r3/opt/linesearch/WolfeConditions.java" changelist="392f45c0-36d1-4da6-b39f-6bae9fe5579e" time="1374900369097" ignored="false" />
+    <file path="$PROJECT_DIR$/../optimization-java/src/main/java/com/numb3r3/opt/linesearch/ArmijoLineSearchMinimizationAlongProjectionArc.java" changelist="392f45c0-36d1-4da6-b39f-6bae9fe5579e" time="1374902524390" ignored="false" />
+    <file path="$PROJECT_DIR$/../optimization-java/src/main/java/com/numb3r3/opt/linesearch/DifferentiableLineSearchObjective.java" changelist="392f45c0-36d1-4da6-b39f-6bae9fe5579e" time="1374902613720" ignored="false" />
+    <file path="$PROJECT_DIR$/../optimization-java/src/main/java/com/numb3r3/opt/linesearch/InterpolationPickFirstStep.java" changelist="392f45c0-36d1-4da6-b39f-6bae9fe5579e" time="1374900369097" ignored="false" />
+    <file path="$PROJECT_DIR$/../optimization-java/src/main/java/com/numb3r3/opt/linesearch/GenericPickFirstStep.java" changelist="392f45c0-36d1-4da6-b39f-6bae9fe5579e" time="1374900369097" ignored="false" />
+    <file path="$PROJECT_DIR$/../optimization-java/src/main/java/com/numb3r3/opt/linesearch/LineSearchMethod.java" changelist="392f45c0-36d1-4da6-b39f-6bae9fe5579e" time="1374900369097" ignored="false" />
+    <file path="$PROJECT_DIR$/../optimization-java/src/main/java/com/numb3r3/opt/linesearch/NonNewtonInterpolationPickFirstStep.java" changelist="392f45c0-36d1-4da6-b39f-6bae9fe5579e" time="1374900369097" ignored="false" />
+    <file path="$PROJECT_DIR$/../optimization-java/src/main/java/com/numb3r3/opt/linesearch/ArmijoLineSearchMinimization.java" changelist="392f45c0-36d1-4da6-b39f-6bae9fe5579e" time="1374900388472" ignored="false" />
+    <file path="$PROJECT_DIR$/../optimization-java/src/main/java/com/numb3r3/opt/linesearch/ProjectedDifferentiableLineSearchObjective.java" changelist="392f45c0-36d1-4da6-b39f-6bae9fe5579e" time="1374902680909" ignored="false" />
+    <file path="$PROJECT_DIR$/../optimization-java/src/main/java/com/numb3r3/optimization/gradientBasedMethods/GradientDescent.java" changelist="392f45c0-36d1-4da6-b39f-6bae9fe5579e" time="1374900369097" ignored="false" />
+    <file path="$PROJECT_DIR$/../optimization-java/src/main/java/com/numb3r3/opt/linesearch/WolfRuleLineSearch.java" changelist="392f45c0-36d1-4da6-b39f-6bae9fe5579e" time="1374902695909" ignored="false" />
+    <file path="$PROJECT_DIR$/../optimization-java/src/main/java/com/numb3r3/optimization/gradientBasedMethods/ProjectedOptimizer.java" changelist="392f45c0-36d1-4da6-b39f-6bae9fe5579e" time="1374900411645" ignored="false" />
+    <file path="/ProjectedOptimizer.java" changelist="392f45c0-36d1-4da6-b39f-6bae9fe5579e" time="1374900411176" ignored="false" />
+    <file path="$PROJECT_DIR$/../optimization-java/src/main/java/com/numb3r3/opt/gradientBasedMethods/AbstractGradientBaseMethod.java" changelist="392f45c0-36d1-4da6-b39f-6bae9fe5579e" time="1374903194244" ignored="false" />
+    <file path="$PROJECT_DIR$/../optimization-java/src/main/java/com/numb3r3/opt/gradientBasedMethods/LBFGS.java" changelist="392f45c0-36d1-4da6-b39f-6bae9fe5579e" time="1374903277921" ignored="false" />
+    <file path="$PROJECT_DIR$/../optimization-java/src/main/java/com/numb3r3/opt/gradientBasedMethods/ProjectedGradientDescent.java" changelist="392f45c0-36d1-4da6-b39f-6bae9fe5579e" time="1374902721675" ignored="false" />
+    <file path="$PROJECT_DIR$/../optimization-java/src/main/java/com/numb3r3/opt/gradientBasedMethods/Objective.java" changelist="392f45c0-36d1-4da6-b39f-6bae9fe5579e" time="1374900450646" ignored="false" />
+    <file path="$PROJECT_DIR$/../optimization-java/src/main/java/com/numb3r3/opt/gradientBasedMethods/NotADescentDirectionException.java" changelist="392f45c0-36d1-4da6-b39f-6bae9fe5579e" time="1374900450646" ignored="false" />
+    <file path="$PROJECT_DIR$/../optimization-java/src/main/java/com/numb3r3/opt/gradientBasedMethods/ProjectedAbstractGradientBaseMethod.java" changelist="392f45c0-36d1-4da6-b39f-6bae9fe5579e" time="1374900450646" ignored="false" />
+    <file path="$PROJECT_DIR$/../optimization-java/src/main/java/com/numb3r3/opt/gradientBasedMethods/DebugHelpers.java" changelist="392f45c0-36d1-4da6-b39f-6bae9fe5579e" time="1374903010267" ignored="false" />
+    <file path="$PROJECT_DIR$/../optimization-java/src/main/java/com/numb3r3/opt/gradientBasedMethods/ProjectedObjective.java" changelist="392f45c0-36d1-4da6-b39f-6bae9fe5579e" time="1374900450646" ignored="false" />
+    <file path="$PROJECT_DIR$/../optimization-java/src/main/java/com/numb3r3/opt/gradientBasedMethods/ConjugateGradient.java" changelist="392f45c0-36d1-4da6-b39f-6bae9fe5579e" time="1374903085685" ignored="false" />
+    <file path="$PROJECT_DIR$/../optimization-java/src/main/java/com/numb3r3/opt/gradientBasedMethods/GradientDescent.java" changelist="392f45c0-36d1-4da6-b39f-6bae9fe5579e" time="1374900450646" ignored="false" />
+    <file path="$PROJECT_DIR$/../optimization-java/src/main/java/com/numb3r3/opt/gradientBasedMethods/Optimizer.java" changelist="392f45c0-36d1-4da6-b39f-6bae9fe5579e" time="1374902776630" ignored="false" />
+    <file path="$PROJECT_DIR$/../optimization-java/src/main/java/com/numb3r3/optimization/gradientBasedMethods/stats/FeatureSplitOptimizerStats.java" changelist="392f45c0-36d1-4da6-b39f-6bae9fe5579e" time="1374900450646" ignored="false" />
+    <file path="$PROJECT_DIR$/../optimization-java/src/main/java/com/numb3r3/optimization/gradientBasedMethods/stats/OptimizerStats.java" changelist="392f45c0-36d1-4da6-b39f-6bae9fe5579e" time="1374900450646" ignored="false" />
+    <file path="$PROJECT_DIR$/../optimization-java/src/main/java/com/numb3r3/optimization/gradientBasedMethods/stats/ProjectedOptimizerStats.java" changelist="392f45c0-36d1-4da6-b39f-6bae9fe5579e" time="1374900450646" ignored="false" />
+    <file path="$PROJECT_DIR$/../optimization-java/src/main/java/com/numb3r3/optimization/gradientBasedMethods/stats/AbstractOptimizerStats.java" changelist="392f45c0-36d1-4da6-b39f-6bae9fe5579e" time="1374900466162" ignored="false" />
+    <file path="/AbstractOptimizerStats.java" changelist="392f45c0-36d1-4da6-b39f-6bae9fe5579e" time="1374900466490" ignored="false" />
+    <file path="$PROJECT_DIR$/../optimization-java/src/main/java/com/numb3r3/opt/gradientBasedMethods/stats/FeatureSplitOptimizerStats.java" changelist="392f45c0-36d1-4da6-b39f-6bae9fe5579e" time="1374900480412" ignored="false" />
+    <file path="$PROJECT_DIR$/../optimization-java/src/main/java/com/numb3r3/opt/gradientBasedMethods/stats/OptimizerStats.java" changelist="392f45c0-36d1-4da6-b39f-6bae9fe5579e" time="1374903236731" ignored="false" />
+    <file path="$PROJECT_DIR$/../optimization-java/src/main/java/com/numb3r3/opt/gradientBasedMethods/stats/ProjectedOptimizerStats.java" changelist="392f45c0-36d1-4da6-b39f-6bae9fe5579e" time="1374903259186" ignored="false" />
+    <file path="/GeneralizedRosenbrock.java" changelist="392f45c0-36d1-4da6-b39f-6bae9fe5579e" time="1374900671854" ignored="false" />
+    <file path="$PROJECT_DIR$/../optimization-java/src/main/java/com/numb3r3/opt/examples/SimplexOpt.java" changelist="392f45c0-36d1-4da6-b39f-6bae9fe5579e" time="1374900510507" ignored="false" />
+    <file path="$PROJECT_DIR$/../optimization-java/src/main/java/com/numb3r3/opt/examples/x2y2.java" changelist="392f45c0-36d1-4da6-b39f-6bae9fe5579e" time="1374900510507" ignored="false" />
+    <file path="$PROJECT_DIR$/../optimization-java/src/main/java/com/numb3r3/opt/examples/x2y2WithConstraints.java" changelist="392f45c0-36d1-4da6-b39f-6bae9fe5579e" time="1374900510507" ignored="false" />
+    <file path="$PROJECT_DIR$/../optimization-java/src/main/java/com/numb3r3/opt/examples/GeneralizedRosenbrock.java" changelist="392f45c0-36d1-4da6-b39f-6bae9fe5579e" time="1374900768669" ignored="false" />
+    <file path="/Projection.java" changelist="392f45c0-36d1-4da6-b39f-6bae9fe5579e" time="1374901141598" ignored="false" />
+    <file path="/SimplexProjection.java" changelist="392f45c0-36d1-4da6-b39f-6bae9fe5579e" time="1374902255057" ignored="false" />
+    <file path="/ArrayUtil.java" changelist="392f45c0-36d1-4da6-b39f-6bae9fe5579e" time="1374902172415" ignored="false" />
+    <file path="/ProjectedGradientL2Norm.java" changelist="392f45c0-36d1-4da6-b39f-6bae9fe5579e" time="1374902386747" ignored="false" />
+    <file path="/NormalizedProjectedGradientL2Norm.java" changelist="392f45c0-36d1-4da6-b39f-6bae9fe5579e" time="1374902429029" ignored="false" />
+    <file path="/NormalizedGradientL2Norm.java" changelist="392f45c0-36d1-4da6-b39f-6bae9fe5579e" time="1374902455014" ignored="false" />
+    <file path="/GradientL2Norm.java" changelist="392f45c0-36d1-4da6-b39f-6bae9fe5579e" time="1374902480015" ignored="false" />
+    <file path="/ArmijoLineSearchMinimizationAlongProjectionArc.java" changelist="392f45c0-36d1-4da6-b39f-6bae9fe5579e" time="1374902523750" ignored="false" />
+    <file path="/DifferentiableLineSearchObjective.java" changelist="392f45c0-36d1-4da6-b39f-6bae9fe5579e" time="1374902596392" ignored="false" />
+    <file path="/ProjectedDifferentiableLineSearchObjective.java" changelist="392f45c0-36d1-4da6-b39f-6bae9fe5579e" time="1374902670159" ignored="false" />
+    <file path="/WolfRuleLineSearch.java" changelist="392f45c0-36d1-4da6-b39f-6bae9fe5579e" time="1374902695347" ignored="false" />
+    <file path="/ProjectedGradientDescent.java" changelist="392f45c0-36d1-4da6-b39f-6bae9fe5579e" time="1374902721269" ignored="false" />
+    <file path="/Optimizer.java" changelist="392f45c0-36d1-4da6-b39f-6bae9fe5579e" time="1374902776239" ignored="false" />
+    <file path="/LBFGS.java" changelist="392f45c0-36d1-4da6-b39f-6bae9fe5579e" time="1374903276937" ignored="false" />
+    <file path="/DebugHelpers.java" changelist="392f45c0-36d1-4da6-b39f-6bae9fe5579e" time="1374903004188" ignored="false" />
+    <file path="/ConjugateGradient.java" changelist="392f45c0-36d1-4da6-b39f-6bae9fe5579e" time="1374903085357" ignored="false" />
+    <file path="/AbstractGradientBaseMethod.java" changelist="392f45c0-36d1-4da6-b39f-6bae9fe5579e" time="1374903099015" ignored="false" />
+    <file path="/OptimizerStats.java" changelist="392f45c0-36d1-4da6-b39f-6bae9fe5579e" time="1374903236309" ignored="false" />
+    <file path="/ProjectedOptimizerStats.java" changelist="392f45c0-36d1-4da6-b39f-6bae9fe5579e" time="1374903258686" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,27 +229,27 @@
     <favorites_list name="commons-java" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="pom.xml" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="22" selection-start="1685" selection-end="1685" vertical-scroll-proportion="1.5735028">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
       <setting name="OPEN_NEW_TAB" value="false" />
     </FindUsagesManager>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitLogSettings">
+    <option name="myDateState">
+      <MyDateState />
+    </option>
+  </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/numb3r3/common/math/Maths.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/numb3r3/common/collection/ArrayUtil.java" />
       </list>
     </option>
   </component>
@@ -94,13 +260,41 @@
       </MavenGeneralSettings>
     </option>
   </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="commons-java" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="commons-java" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Lifecycle" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$LifecycleNode" />
+        </PATH_ELEMENT>
+      </PATH>
+    </treeState>
+  </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-4" />
     <option name="y" value="-4" />
     <option name="width" value="1688" />
     <option name="height" value="1020" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -157,6 +351,10 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -184,18 +382,84 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="commons-java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="commons-java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="common" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="math" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="commons-java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="commons-java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="common" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="collection" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="GoToFile.includeJavaFiles" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
     <property name="MemberChooser.sorted" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
+    <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="dynamic.classpath" value="false" />
     <property name="MemberChooser.copyJavadoc" value="false" />
   </component>
   <component name="RunManager">
@@ -203,6 +467,28 @@
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
       <option name="PROGRAM_PARAMETERS" />
+      <method />
+    </configuration>
+    <configuration default="true" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list />
+            </option>
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
       <method />
     </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
@@ -294,6 +580,23 @@
     </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="all">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="392f45c0-36d1-4da6-b39f-6bae9fe5579e" name="Default" comment="" />
@@ -303,29 +606,29 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-4" y="-4" width="1688" height="1020" extended-state="6" />
+    <frame x="-4" y="-4" width="1688" height="1020" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329849" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.329849" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329849" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329849" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.329849" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32986537" sideWeight="0.670151" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.249694" sideWeight="0.670151" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.249694" sideWeight="0.670151" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329849" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -370,7 +673,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" />
+    <option name="LAST_COMMIT_MESSAGE" value="" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -395,7 +698,39 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="22" selection-start="1685" selection-end="1685" vertical-scroll-proportion="1.5735028">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="19" selection-start="1255" selection-end="1255" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/numb3r3/common/MathUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="248" column="43" selection-start="6832" selection-end="6832" vertical-scroll-proportion="2.65019">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/numb3r3/common/collection/ArrayUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="24" selection-start="1052" selection-end="1052" vertical-scroll-proportion="0.33333334">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#547#765#0" expanded="true" />
+            <element signature="e#754#755#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/numb3r3/common/math/Maths.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="84" column="26" selection-start="2123" selection-end="2123" vertical-scroll-proportion="-0.11500975">
           <folding />
         </state>
       </provider>

@@ -23,10 +23,9 @@ package com.numb3r3.common.concurrent;
  */
 
 
-
 import java.util.concurrent.ScheduledExecutorService;
 
 // TODO: allow getExecutorForCall?
 public interface IScheduledExecutorProvider<ANNOTATION_TYPE> {
-	public ScheduledExecutorService getExecutorForMethod(ANNOTATION_TYPE pAnnotation);
+    public ScheduledExecutorService getExecutorForMethod(ANNOTATION_TYPE pAnnotation);
 }

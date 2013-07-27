@@ -25,8 +25,8 @@ package com.numb3r3.common.concurrent.executors;
 
 /**
  * Same as folding executor but uses a dedicated thread to do the folding.
- * @author tantaman
  *
+ * @author tantaman
  */
 public class ConcurrentFoldingFoldingExecutor {
 

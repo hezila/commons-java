@@ -23,9 +23,8 @@ package com.numb3r3.common.concurrent.throttler;
  */
 
 
-
 import java.util.LinkedList;
 
 public interface AccumulativeRunnable<PARAM_TYPE> {
-	public void run(LinkedList<PARAM_TYPE> pParams);
+    public void run(LinkedList<PARAM_TYPE> pParams);
 }

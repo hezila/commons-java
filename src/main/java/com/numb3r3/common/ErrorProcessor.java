@@ -8,12 +8,14 @@ public interface ErrorProcessor {
 
     /**
      * Write an error message.
+     *
      * @param message the error message
      */
     void error(String message);
-    
+
     /**
      * Write a warning message.
+     *
      * @param message the warning message
      */
     void warning(String message);

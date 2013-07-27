@@ -30,92 +30,92 @@ import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 
 public class ThrottleRunnable<PARAM_TYPE> implements Runnable {
-	private LinkedList<PARAM_TYPE> mParameters;
-	private final AccumulativeRunnable<PARAM_TYPE> mAccRunnable;
-	private final long mDelayTime;
-	private final ScheduledExecutorService mExecutor;
-	private Future<?> mFuture;
+    private LinkedList<PARAM_TYPE> mParameters;
+    private final AccumulativeRunnable<PARAM_TYPE> mAccRunnable;
+    private final long mDelayTime;
+    private final ScheduledExecutorService mExecutor;
+    private Future<?> mFuture;
 
-	public ThrottleRunnable(AccumulativeRunnable<PARAM_TYPE> pAccRunnable,
-			long pDelayTime, ScheduledExecutorService pExecutor) {
-		mExecutor = pExecutor;
-		mAccRunnable = pAccRunnable;
-		mParameters = new LinkedList<PARAM_TYPE>();
-		mDelayTime = pDelayTime;
-		mFuture = null;
-	}
-	
-	public void run() {
-		do {
-			LinkedList<PARAM_TYPE> parameters;
-			synchronized (this) {
-				parameters = swapParameters();
-				if (parameters == null) {
-					cancel(false);
-					return;
-				}
-			}
+    public ThrottleRunnable(AccumulativeRunnable<PARAM_TYPE> pAccRunnable,
+                            long pDelayTime, ScheduledExecutorService pExecutor) {
+        mExecutor = pExecutor;
+        mAccRunnable = pAccRunnable;
+        mParameters = new LinkedList<PARAM_TYPE>();
+        mDelayTime = pDelayTime;
+        mFuture = null;
+    }
 
-			run(parameters);
-		} while (mDelayTime <= 0);
-	}
-	
-	synchronized void cancel(boolean mayInterruptIfRunning) {
-		if (mFuture != null) {
-			mFuture.cancel(mayInterruptIfRunning);
-			mFuture = null;
-		}
-	}
+    public void run() {
+        do {
+            LinkedList<PARAM_TYPE> parameters;
+            synchronized (this) {
+                parameters = swapParameters();
+                if (parameters == null) {
+                    cancel(false);
+                    return;
+                }
+            }
 
-	synchronized void add(PARAM_TYPE pParam) {
-		mParameters.add(pParam);
+            run(parameters);
+        } while (mDelayTime <= 0);
+    }
 
-		if (mFuture == null) {
-			if (mDelayTime <= 0) {
-				mFuture = mExecutor.submit(this);
-			} else {
-				mFuture = mExecutor.scheduleWithFixedDelay(this, 0, mDelayTime, TimeUnit.MILLISECONDS);
-			}
-		}
-	}
-	
+    synchronized void cancel(boolean mayInterruptIfRunning) {
+        if (mFuture != null) {
+            mFuture.cancel(mayInterruptIfRunning);
+            mFuture = null;
+        }
+    }
 
-	void shutdown() {
-		mExecutor.shutdown();
-		//cancel(false);
-	}
-	
-	List<Runnable> shutdownNow() {
-		List<Runnable> runnables = mExecutor.shutdownNow();
-		//cancel(false);
-		return runnables;
-	}
+    synchronized void add(PARAM_TYPE pParam) {
+        mParameters.add(pParam);
 
-	private LinkedList<PARAM_TYPE> swapParameters() {
-		LinkedList<PARAM_TYPE> parameters;
-		if (mParameters.isEmpty()) {
-			parameters = null;
-		} else {
-			parameters = mParameters;
-			mParameters = new LinkedList<PARAM_TYPE>();
-		}
+        if (mFuture == null) {
+            if (mDelayTime <= 0) {
+                mFuture = mExecutor.submit(this);
+            } else {
+                mFuture = mExecutor.scheduleWithFixedDelay(this, 0, mDelayTime, TimeUnit.MILLISECONDS);
+            }
+        }
+    }
 
-		return parameters;
-	}
 
-	private void run(LinkedList<PARAM_TYPE> pParameters) {
-		mAccRunnable.run(pParameters);
-	}
+    void shutdown() {
+        mExecutor.shutdown();
+        //cancel(false);
+    }
 
-	public boolean awaitTermination(long timeout, TimeUnit unit) throws InterruptedException {
-		return mExecutor.awaitTermination(timeout, unit);
-	}
+    List<Runnable> shutdownNow() {
+        List<Runnable> runnables = mExecutor.shutdownNow();
+        //cancel(false);
+        return runnables;
+    }
 
-	public boolean isShutdown() {
-		return mExecutor.isShutdown();
-	}
+    private LinkedList<PARAM_TYPE> swapParameters() {
+        LinkedList<PARAM_TYPE> parameters;
+        if (mParameters.isEmpty()) {
+            parameters = null;
+        } else {
+            parameters = mParameters;
+            mParameters = new LinkedList<PARAM_TYPE>();
+        }
 
-	public boolean isTerminated() {
-		return mExecutor.isTerminated();
-	}
+        return parameters;
+    }
+
+    private void run(LinkedList<PARAM_TYPE> pParameters) {
+        mAccRunnable.run(pParameters);
+    }
+
+    public boolean awaitTermination(long timeout, TimeUnit unit) throws InterruptedException {
+        return mExecutor.awaitTermination(timeout, unit);
+    }
+
+    public boolean isShutdown() {
+        return mExecutor.isShutdown();
+    }
+
+    public boolean isTerminated() {
+        return mExecutor.isTerminated();
+    }
 }

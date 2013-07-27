@@ -25,51 +25,50 @@ package com.numb3r3.common.concurrent.throttler;
  */
 
 
-
 import java.util.List;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 
 
 public class InvocationCombiner<PARAM_TYPE> {
-	private final ThrottleRunnable<PARAM_TYPE> mRunnable;
+    private final ThrottleRunnable<PARAM_TYPE> mRunnable;
 
-	public InvocationCombiner(AccumulativeRunnable<PARAM_TYPE> pRunnable,
-			long pDelayTime, TimeUnit pTimeUnit, ScheduledExecutorService pExecutor) {
-		mRunnable = new ThrottleRunnable<PARAM_TYPE>(
-				pRunnable,
-				TimeUnit.MILLISECONDS.convert(pDelayTime, pTimeUnit),
-				pExecutor);
-	}
-	
-	public InvocationCombiner(AccumulativeRunnable<PARAM_TYPE> pRunnable,
-			ScheduledExecutorService pExecutor) {
-		mRunnable = new ThrottleRunnable<PARAM_TYPE>(
-				pRunnable, 0, pExecutor);
-	}
+    public InvocationCombiner(AccumulativeRunnable<PARAM_TYPE> pRunnable,
+                              long pDelayTime, TimeUnit pTimeUnit, ScheduledExecutorService pExecutor) {
+        mRunnable = new ThrottleRunnable<PARAM_TYPE>(
+                pRunnable,
+                TimeUnit.MILLISECONDS.convert(pDelayTime, pTimeUnit),
+                pExecutor);
+    }
 
-	public void execute(PARAM_TYPE pParam) {
-		mRunnable.add(pParam);
-	}
+    public InvocationCombiner(AccumulativeRunnable<PARAM_TYPE> pRunnable,
+                              ScheduledExecutorService pExecutor) {
+        mRunnable = new ThrottleRunnable<PARAM_TYPE>(
+                pRunnable, 0, pExecutor);
+    }
 
-	public boolean awaitTermination(long timeout, TimeUnit unit)
-			throws InterruptedException {
-		return mRunnable.awaitTermination(timeout, unit);
-	}
+    public void execute(PARAM_TYPE pParam) {
+        mRunnable.add(pParam);
+    }
 
-	public boolean isShutdown() {
-		return mRunnable.isShutdown();
-	}
+    public boolean awaitTermination(long timeout, TimeUnit unit)
+            throws InterruptedException {
+        return mRunnable.awaitTermination(timeout, unit);
+    }
 
-	public boolean isTerminated() {
-		return mRunnable.isTerminated();
-	}
+    public boolean isShutdown() {
+        return mRunnable.isShutdown();
+    }
 
-	public void shutdown() {
-		mRunnable.shutdown();
-	}
+    public boolean isTerminated() {
+        return mRunnable.isTerminated();
+    }
 
-	public List<Runnable> shutdownNow() {
-		return mRunnable.shutdownNow();
-	}
+    public void shutdown() {
+        mRunnable.shutdown();
+    }
+
+    public List<Runnable> shutdownNow() {
+        return mRunnable.shutdownNow();
+    }
 }

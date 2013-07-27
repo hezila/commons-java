@@ -23,20 +23,20 @@ package com.numb3r3.common.concurrent.executors;
  */
 
 
-
 import java.util.concurrent.Future;
 
 /**
  * A future that can be registered with so the user is notified of its completion.
- * @author Matt Crinklaw-Vogt
  *
  * @param <V>
+ * @author Matt Crinklaw-Vogt
  */
 public interface ObservableFuture<V> extends Future<V> {
-	public void addObserver(Observer<V> listener);
-	public void removeObserver(Observer<V> listener);
-	
-	public static interface Observer<V> {
-		public void taskCompleted(V result);
-	}
+    public void addObserver(Observer<V> listener);
+
+    public void removeObserver(Observer<V> listener);
+
+    public static interface Observer<V> {
+        public void taskCompleted(V result);
+    }
 }

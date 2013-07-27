@@ -5,7 +5,6 @@ import java.text.NumberFormat;
 import java.util.ArrayList;
 
 
-
 public class Counter {
 
     private static final NumberFormat nf = NumberFormat.getIntegerInstance();
@@ -30,12 +29,12 @@ public class Counter {
         return this.value;
     }
 
-    public int increment(int x){
+    public int increment(int x) {
         this.value += x;
         return this.value;
     }
 
-    public int value(){
+    public int value() {
         return this.value;
     }
 
@@ -51,6 +50,7 @@ public class Counter {
         }
         return integers;
     }
+
     public String getValueString(int num_digits) {
         nf.setMinimumIntegerDigits(num_digits);
         nf.setGroupingUsed(false);
