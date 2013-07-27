@@ -29,7 +29,7 @@
     <file path="$PROJECT_DIR$/../optimization-java/pom.xml" changelist="392f45c0-36d1-4da6-b39f-6bae9fe5579e" time="1374899581881" ignored="false" />
     <file path="/pom.xml" changelist="392f45c0-36d1-4da6-b39f-6bae9fe5579e" time="1374899574115" ignored="false" />
     <file path="/Maths.java" changelist="392f45c0-36d1-4da6-b39f-6bae9fe5579e" time="1374900123215" ignored="false" />
-    <file path="/Dummy.txt" changelist="392f45c0-36d1-4da6-b39f-6bae9fe5579e" time="1374903735460" ignored="false" />
+    <file path="/Dummy.txt" changelist="392f45c0-36d1-4da6-b39f-6bae9fe5579e" time="1374903945121" ignored="false" />
     <file path="/BoundsProjection.java" changelist="392f45c0-36d1-4da6-b39f-6bae9fe5579e" time="1374900325986" ignored="false" />
     <file path="$PROJECT_DIR$/../optimization-java/src/main/java/com/numb3r3/optimization/projections/BoundsProjection.java" changelist="392f45c0-36d1-4da6-b39f-6bae9fe5579e" time="1374900281266" ignored="false" />
     <file path="$PROJECT_DIR$/../optimization-java/src/main/java/com/numb3r3/optimization/examples/SimplexOpt.java" changelist="392f45c0-36d1-4da6-b39f-6bae9fe5579e" time="1374900450646" ignored="false" />
@@ -532,7 +532,11 @@
       <created>1374903887182</created>
       <updated>1374903887182</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="first commit. Formating code style.">
+      <created>1374903957700</created>
+      <updated>1374903957700</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
