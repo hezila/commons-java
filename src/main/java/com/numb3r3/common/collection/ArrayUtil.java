@@ -7,9 +7,10 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.Random;
 
+
 public class ArrayUtil {
-	
-	public static int[] argsort(final double[] a) {
+
+    public static int[] argsort(final double[] a) {
         return argsort(a, true);
     }
 
@@ -35,87 +36,87 @@ public class ArrayUtil {
         return b;
     }
 
-	public static int[] createIntArray(int length, int value) {
-		int[] values = new int[length];
-		for (int i = 0; i < length; i++) {
-			values[i] = value;
-		}
-		return values;
-	}
+    public static int[] createIntArray(int length, int value) {
+        int[] values = new int[length];
+        for (int i = 0; i < length; i++) {
+            values[i] = value;
+        }
+        return values;
+    }
 
-	public static double[] createDoubleArray(int length, double value) {
-		double[] values = new double[length];
-		for (int i = 0; i < length; i++) {
-			values[i] = value;
-		}
-		return values;
-	}
+    public static double[] createDoubleArray(int length, double value) {
+        double[] values = new double[length];
+        for (int i = 0; i < length; i++) {
+            values[i] = value;
+        }
+        return values;
+    }
 
-	public static int[] combineIntArray(int[] first, int[] second) {
-		int[] combine = new int[first.length + second.length];
-		int i;
-		for (i = 0; i < first.length; i++) {
-			combine[i] = first[i];
-		}
-		for (i = 0; i < second.length; i++) {
-			combine[i + first.length] = second[i];
-		}
-		return combine;
-	}
+    public static int[] combineIntArray(int[] first, int[] second) {
+        int[] combine = new int[first.length + second.length];
+        int i;
+        for (i = 0; i < first.length; i++) {
+            combine[i] = first[i];
+        }
+        for (i = 0; i < second.length; i++) {
+            combine[i + first.length] = second[i];
+        }
+        return combine;
+    }
 
 
-	public static double[] toDoubleArray(List<Double> list) {
-		double[] array = new double[list.size()];
-		for (int i = 0; i < list.size(); i++) {
-			array[i] = list.get(i);
-		}
-		return array;
-	}
-	
-	public static int[] toIntegerArray(List<Integer> list) {
-		int[] array = new int[list.size()];
-		for(int i =0; i < list.size(); i++) {
-			array[i] = list.get(i);
-		}
-		return array;
-	}
+    public static double[] toDoubleArray(List<Double> list) {
+        double[] array = new double[list.size()];
+        for (int i = 0; i < list.size(); i++) {
+            array[i] = list.get(i);
+        }
+        return array;
+    }
 
-	
-	  public static float[][] copyOf(final float[][] x, final int newLength) {
-	        float[][] y = new float[newLength][];
-	        for (int i = 0; i < y.length; i++) {
-	            if (x[i] != null) {
-	                y[i] = Arrays.copyOf(x[i], x[i].length);
-	            }
-	        }
-	        return y;
-	    }
+    public static int[] toIntegerArray(List<Integer> list) {
+        int[] array = new int[list.size()];
+        for (int i = 0; i < list.size(); i++) {
+            array[i] = list.get(i);
+        }
+        return array;
+    }
 
-	    /**
-	     * Assigns a random value to each element of the specified array of doubles.
-	     */
-	    public static void fillRandom(final double[] x, final Random rng) {
-	        for (int i = 0; i < x.length; i++) {
-	            x[i] = rng.nextDouble();
-	        }
-	    }
-	    
-	    /**
-	     * Returns true if <code>element</code> is in <code>array</code>.
-	     * 
-	     * @param array
-	     * @param value
-	     * @return
-	     */
-	    public static boolean isInArray(Object[] array, Object value) {
-	      for (Object element : array) {
-	        if (element.equals(value)) {
-	          return true;
-	        }
-	      }
 
-	      return false;
-	    }
+    public static float[][] copyOf(final float[][] x, final int newLength) {
+        float[][] y = new float[newLength][];
+        for (int i = 0; i < y.length; i++) {
+            if (x[i] != null) {
+                y[i] = Arrays.copyOf(x[i], x[i].length);
+            }
+        }
+        return y;
+    }
+
+    /**
+     * Assigns a random value to each element of the specified array of doubles.
+     */
+    public static void fillRandom(final double[] x, final Random rng) {
+        for (int i = 0; i < x.length; i++) {
+            x[i] = rng.nextDouble();
+        }
+    }
+
+    /**
+     * Returns true if <code>element</code> is in <code>array</code>.
+     *
+     * @param array
+     * @param value
+     * @return
+     */
+    public static boolean isInArray(Object[] array, Object value) {
+        for (Object element : array) {
+            if (element.equals(value)) {
+                return true;
+            }
+        }
+
+        return false;
+    }
 
 
     public static boolean isEmpty(int[] arrays) {
@@ -219,7 +220,6 @@ public class ArrayUtil {
     }
 
 
-
     public static double[][] outerProduct(double[] w, double[] v) {
         double[][] result = new double[w.length][v.length];
         for (int i = 0; i < w.length; i++) {
@@ -242,7 +242,7 @@ public class ArrayUtil {
      *
      * @param w
      * @param v
-     * @param a   weight
+     * @param a weight
      * @return
      */
     public static double[][] weightedouterProduct(double[] w, double[] v, double a) {
@@ -354,7 +354,6 @@ public class ArrayUtil {
     }
 
 
-
     public static void scalarMultiplication(double[] w, double v) {
         int w1 = w.length;
         for (int w_i1 = 0; w_i1 < w1; w_i1++) {
@@ -392,20 +391,30 @@ public class ArrayUtil {
         }
     }
 
+    public static void sortDescending(double[] ds) {
+        int[] ranks = ArrayUtil.argsort(ds);
+
+        for (int i = 0; i < ranks.length; i++) {
+            int position = ranks[i];
+            double temp = ds[i];
+            ds[i] = ds[position];
+            ds[position] = temp;
+        }
+    }
 
 
     /**
-	 * @param args
-	 */
-	public static void main(String[] args) {
-		double[] tests = new double[10];
-		ArrayUtil.fillRandom(tests, new Random());
+     * @param args
+     */
+    public static void main(String[] args) {
+        double[] tests = new double[10];
+        ArrayUtil.fillRandom(tests, new Random());
 
-		int[] sorts = ArrayUtil.argsort(tests, false);
-		for (int i = 0; i< 10; i++) {
-			System.out.print(sorts[i] + "  " + tests[sorts[i]] + "\n");
-		}
-		
-	}
+        int[] sorts = ArrayUtil.argsort(tests, false);
+        for (int i = 0; i < 10; i++) {
+            System.out.print(sorts[i] + "  " + tests[sorts[i]] + "\n");
+        }
+
+    }
 
 }

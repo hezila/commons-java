@@ -1,0 +1,15 @@
+# IntelliJ files #
+##################
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# java compiled files#
+######################
+*.class
+
+# Package Files #
+*.jar
+*.war
+*.ear
