@@ -1,5 +1,7 @@
 package com.numb3r3.common.io;
 
+import com.google.common.io.PatternFilenameFilter;
+
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -108,5 +110,21 @@ public class FileUtils {
             // process the file
             files.add(path);
         }
+    }
+
+    public static String backtrackToFile(String startDir, String targetFile) {
+        FilenameFilter filenameFilter = new PatternFilenameFilter(targetFile);
+        File currentDir = new File(startDir).getAbsoluteFile();
+
+        while (currentDir.getParentFile() != null){
+            String[] files = currentDir.list(filenameFilter);
+            if (files.length == 1) {
+                return currentDir.getAbsolutePath();
+            } else {
+                currentDir = currentDir.getParentFile();
+            }
+        }
+
+        return null;
     }
 }

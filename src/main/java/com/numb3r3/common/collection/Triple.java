@@ -1,14 +1,16 @@
-package com.numb3r3.common;
+package com.numb3r3.common.collection;
 
-public class Pair<First, Second> {
-    private final First first;
+public class Triple<First, Second, Third> {
+    private final First  first;
     private final Second second;
+    private final Third  third;
 
     private volatile String toStringResult;
 
-    public Pair(First first, Second second) {
-        this.first = first;
+    public Triple(First first, Second second, Third third) {
+        this.first  = first;
         this.second = second;
+        this.third  = third;
     }
 
     public First getFirst() {
@@ -17,6 +19,10 @@ public class Pair<First, Second> {
 
     public Second getSecond() {
         return second;
+    }
+
+    public Third getThird() {
+        return third;
     }
 
     @Override
@@ -29,13 +35,17 @@ public class Pair<First, Second> {
             return false;
         }
 
-        final Pair pair = (Pair) o;
+        final Triple triple = (Triple) o;
 
-        if (first != null ? !first.equals(pair.first) : pair.first != null) {
+        if (first != null ? !first.equals(triple.first) : triple.first != null) {
             return false;
         }
 
-        if (second != null ? !second.equals(pair.second) : pair.second != null) {
+        if (second != null ? !second.equals(triple.second) : triple.second != null) {
+            return false;
+        }
+
+        if (third != null ? !third.equals(triple.third) : triple.third != null) {
             return false;
         }
 
@@ -47,6 +57,7 @@ public class Pair<First, Second> {
         int result = first != null ? first.hashCode() : 0;
 
         result = 31 * result + (second != null ? second.hashCode() : 0);
+        result = 31 * result + (third != null ? third.hashCode() : 0);
 
         return result;
     }
@@ -54,9 +65,10 @@ public class Pair<First, Second> {
     @Override
     public String toString() {
         if (toStringResult == null) {
-            toStringResult = "Pair{" +
+            toStringResult = "Triple{" +
                     "first=" + first +
                     ", second=" + second +
+                    ", third=" + third +
                     '}';
         }
 

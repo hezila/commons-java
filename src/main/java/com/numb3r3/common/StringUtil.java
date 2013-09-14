@@ -1,6 +1,7 @@
 package com.numb3r3.common;
 
 import com.google.common.collect.Lists;
+import org.apache.commons.lang.StringEscapeUtils;
 
 import java.util.List;
 import java.util.Scanner;
@@ -39,6 +40,14 @@ public class StringUtil {
             //break;
         }
         return list;
+    }
+
+    public static String stripQuotes(String input) {
+        if (input.startsWith("'") || input.startsWith("\"")) {
+            return StringEscapeUtils.unescapeJava(input.substring(1, input.length() - 1));
+        } else {
+            return input;
+        }
     }
 
     public static void main(String[] args) {
