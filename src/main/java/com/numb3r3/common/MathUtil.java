@@ -1,7 +1,6 @@
 package com.numb3r3.common;
 
 import com.google.common.collect.Maps;
-import com.google.common.collect.Ordering;
 import com.numb3r3.common.collection.ArrayUtil;
 import com.numb3r3.common.math.Matrix;
 import com.numb3r3.common.math.local.InMemoryJBlasMatrix;
@@ -123,7 +122,7 @@ public class MathUtil {
             prec *= prec;
             prec = INV810 / prec;
             /*
-			 * y = x * ( log(x) - 1 + .5 * log(x * sinh(1/x) + prec) ) - .5 *
+             * y = x * ( log(x) - 1 + .5 * log(x * sinh(1/x) + prec) ) - .5 *
 			 * log(x) + .5 * log(2 * pi)
 			 */
             return x
@@ -273,14 +272,6 @@ public class MathUtil {
         return arg;
     }
 
-
-    public static List<Pair> sortcopy(List<Pair> pairs) {
-        return Ordering.natural().reverse().sortedCopy(pairs);
-    }
-
-    public static List<Pair> greatestOf(List<Pair> pairs, int top) {
-        return Ordering.natural().greatestOf(pairs, top);
-    }
 
     public static void hist(List<Integer> members) {
         Map<Integer, Double> hist = Maps.newHashMap();
