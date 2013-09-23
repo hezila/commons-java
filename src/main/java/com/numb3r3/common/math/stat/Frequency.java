@@ -6,10 +6,7 @@ import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
 import com.google.common.io.Files;
 
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.io.Writer;
+import java.io.*;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
@@ -87,23 +84,42 @@ public class Frequency<T> {
         return this.freqs.keySet();
     }
 
-    public List<T> lte_container(double uperbound) {
+    public List<T> lte_container(double uperbound, int flag) {
         List<T> lts = Lists.newArrayList();
-        for (T key : this.freqs.keySet()) {
-            if (this.counts(key) <= uperbound) {
-                lts.add(key);
+
+        if (flag == 0) {
+            for (T key : this.freqs.keySet()) {
+                if (this.counts(key) <= uperbound) {
+                    lts.add(key);
+                }
+            }
+        } else {
+            for (T key : this.freqs.keySet()) {
+                if (this.freq(key) <= uperbound) {
+                    lts.add(key);
+                }
             }
         }
+
         return lts;
     }
 
-    public List<T> gte_container(double lowerbound) {
+    public List<T> gte_container(double lowerbound, int flag) {
         List<T> gts = Lists.newArrayList();
-        for (T key : this.freqs.keySet()) {
-            if (this.counts(key) >= lowerbound) {
-                gts.add(key);
+        if (flag == 0) {
+            for (T key : this.freqs.keySet()) {
+                if (this.counts(key) >= lowerbound) {
+                    gts.add(key);
+                }
+            }
+        } else {
+            for (T key : this.freqs.keySet()) {
+                if (this.freq(key) >= lowerbound) {
+                    gts.add(key);
+                }
             }
         }
+
         return gts;
     }
 
@@ -125,7 +141,9 @@ public class Frequency<T> {
 
     public void dump(String filename) {
         try {
-            Writer writer = new FileWriter(new File(filename), false);
+            BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(
+                    new FileOutputStream(filename), "UTF-8"));
+
             for (T key : this.freqs.keySet()) {
                 String line = key.toString() + "\t" + this.counts(key);
                 writer.write(line + "\n");
@@ -174,6 +192,7 @@ public class Frequency<T> {
         }
         return null;
     }
+
 
     /**
      * @param args
