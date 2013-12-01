@@ -171,4 +171,95 @@ public class FileUtils {
 
         return null;
     }
+
+    // readLines
+    //-----------------------------------------------------------------------
+    /**
+     * Get the contents of an <code>InputStream</code> as a list of Strings,
+     * one entry per line, using the default character encoding of the platform.
+     * <p>
+     * This method buffers the input internally, so there is no need to use a
+     * <code>BufferedInputStream</code>.
+     *
+     * @param input  the <code>InputStream</code> to read from, not null
+     * @return the list of Strings, never null
+     * @throws NullPointerException if the input is null
+     * @throws IOException if an I/O error occurs
+     * @since Commons IO 1.1
+     */
+    public static List<String> readLines(InputStream input) throws IOException {
+        InputStreamReader reader = new InputStreamReader(input);
+        return readLines(reader);
+    }
+
+    /**
+     * Get the contents of an <code>InputStream</code> as a list of Strings,
+     * one entry per line, using the specified character encoding.
+     * <p>
+     * Character encoding names can be found at
+     * <a href="http://www.iana.org/assignments/character-sets">IANA</a>.
+     * <p>
+     * This method buffers the input internally, so there is no need to use a
+     * <code>BufferedInputStream</code>.
+     *
+     * @param input  the <code>InputStream</code> to read from, not null
+     * @param encoding  the encoding to use, null means platform default
+     * @return the list of Strings, never null
+     * @throws NullPointerException if the input is null
+     * @throws IOException if an I/O error occurs
+     * @since Commons IO 1.1
+     */
+    public static List<String> readLines(InputStream input, String encoding) throws IOException {
+        if (encoding == null) {
+            return readLines(input);
+        } else {
+            InputStreamReader reader = new InputStreamReader(input, encoding);
+            return readLines(reader);
+        }
+    }
+
+    /**
+     * Get the contents of a <code>Reader</code> as a list of Strings,
+     * one entry per line.
+     * <p>
+     * This method buffers the input internally, so there is no need to use a
+     * <code>BufferedReader</code>.
+     *
+     * @param input  the <code>Reader</code> to read from, not null
+     * @return the list of Strings, never null
+     * @throws NullPointerException if the input is null
+     * @throws IOException if an I/O error occurs
+     * @since Commons IO 1.1
+     */
+    public static List<String> readLines(Reader input) throws IOException {
+        BufferedReader reader = new BufferedReader(input);
+        List list = new ArrayList();
+        String line = reader.readLine();
+        while (line != null) {
+            list.add(line);
+            line = reader.readLine();
+        }
+        return list;
+    }
+
+    /**
+     * Reads file completely and returns the contents as a string.
+     * @param fileName
+     * @return file contents
+     * @throws IOException
+     */
+    public static String readToString(String fileName) throws IOException {
+        File f =  new File(fileName);
+        byte[] bytes = new byte[(int) f.length()];
+        FileInputStream fis = new FileInputStream(f);
+
+        int tot = 0;
+        while(tot < bytes.length) {
+            tot += fis.read(bytes, tot, bytes.length - tot);
+        }
+
+        fis.close();
+        return new String(bytes);
+    }
+
 }

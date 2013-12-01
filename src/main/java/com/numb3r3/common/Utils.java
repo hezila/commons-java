@@ -3,6 +3,8 @@ package com.numb3r3.common;
 import org.apache.commons.cli.HelpFormatter;
 import org.apache.commons.cli.Options;
 
+import java.util.List;
+
 public class Utils {
 
     /**
@@ -77,6 +79,16 @@ public class Utils {
         str += "]";
         return str;
 
+    }
+
+    public static double[] toDoubleArray(List<Double> list) {
+        double[] array = new double[list.size()];
+        int index = 0;
+        for (double value : list) {
+            array[index] = value;
+            index ++;
+        }
+        return array;
     }
 
 }

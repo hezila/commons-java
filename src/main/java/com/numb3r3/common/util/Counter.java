@@ -42,6 +42,10 @@ public class Counter {
         this.value = x;
     }
 
+    public void reset() {
+        this.value = 0;
+    }
+
     public static ArrayList<Integer> toIntegerArray(ArrayList<Counter> counters) {
         int size = counters.size();
         ArrayList<Integer> integers = new ArrayList<Integer>(size);

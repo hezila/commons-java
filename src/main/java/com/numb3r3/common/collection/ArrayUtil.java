@@ -385,6 +385,8 @@ public class ArrayUtil {
         return res;
     }
 
+
+
     public static void exponentiate(double[] a) {
         for (int i = 0; i < a.length; i++) {
             a[i] = Math.exp(a[i]);
