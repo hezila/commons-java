@@ -264,6 +264,7 @@ public class FileUtils {
         return new String(bytes);
     }
 
+<<<<<<< HEAD
     public static boolean deleteFolder(File folder) {
         return deleteFolderContents(folder) && folder.delete();
     }
@@ -296,4 +297,6 @@ public class FileUtils {
         }
     }
 
+=======
+>>>>>>> f6cc2fd4ad6831770be6f733f1340439829b6c20
 }
