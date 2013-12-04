@@ -75,7 +75,7 @@ public class ScoredObject<E> implements Scored {
      */
     @Override
     public String toString() {
-        return mScore + ":" + getObject();
+        return getObject() + "\t" + mScore;
     }
 
     /**

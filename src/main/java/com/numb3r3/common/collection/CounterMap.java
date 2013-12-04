@@ -139,4 +139,15 @@ public class CounterMap<K> implements Iterable<Map.Entry<K, Long>> {
                 )
         );
     }
+
+    @Override
+    public String toString() {
+        StringBuffer buffer = new StringBuffer();
+        buffer.append("[");
+        for (Map.Entry<K, Long> entry : this) {
+            buffer.append(entry.getKey() + ":" + entry.getValue() + ", ");
+        }
+        buffer.append("]");
+        return buffer.toString();
+    }
 }

@@ -2,9 +2,15 @@ package com.numb3r3.common;
 
 import java.io.FileNotFoundException;
 import java.io.InputStream;
+import java.net.URL;
 
 public class ResourceUtils {
+
+    public static URL getFileURL(String name, Class<?> loader) {
+        return loader.getClassLoader().getResource(name);
+    }
     public static InputStream loadResourceFromClasspath(String name, Class<?> loader) {
+
         return loader.getClassLoader().getResourceAsStream(name);
     }
 
