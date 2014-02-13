@@ -15,7 +15,10 @@ public class StringUtil {
     static String ALL_PUNCT = "[\\p{Punct}" + ALL_QUOTES + "]+";
     static String PUNCT_PATT = "^(?:[\\p{Punct}"+ALL_QUOTES+"]*)((?:.)|(?:[\\w ].*?[\\w ]))(?:[\\p{Punct}"+ALL_QUOTES+"]*)$";
 
-
+    static String[] QUESTION_STARTS=  {
+      "Was", "What", "When", "Where", "How", "Which", "If",
+      "Who", "Is", "Could", "Might", "Will", "Does", "Why", "Are"
+    };
     public static Set abbreviations = new HashSet(64);
 
     static {
@@ -251,6 +254,73 @@ public class StringUtil {
         Matcher m = CHOMP.matcher(s);
         return m.replaceAll("");
     } static Pattern CHOMP;
+
+
+    public static boolean isQuestion(String sentence) {
+        for (int i = 0; i < QUESTION_STARTS.length; i++) {
+            if ((sentence.trim().toUpperCase()).startsWith(QUESTION_STARTS[i].toUpperCase())) {
+                return true;
+            }
+
+        }
+        return false;
+    }
+
+    /**
+     * <br>
+     * Copyright (c) 2011, Regents of the University of Colorado <br>
+     * All rights reserved.
+     *
+     * @author Philip Ogren
+     * <p/>
+     * <p/>
+     * Portions of this code were derived from pseudocode located at
+     * http://en.wikipedia.org/wiki/Levenshtein_distance
+     */
+
+    public static float levenshteinSimilarity(String string1, String string2) {
+        if (string1.length() == 0 && string2.length() == 0) {
+            return 1.0f;
+        }
+        int editDistance = editDistance(string1, string2);
+
+        float similarity = (float) editDistance / (string1.length() + string2.length());
+        return 1 - Math.min(similarity, 1.0f);
+    }
+
+    public static int editDistance(String string1, String string2) {
+        int rowCount = string1.length() + 1;
+        int columnCount = string2.length() + 1;
+
+        int[][] matrix = new int[rowCount][columnCount];
+
+        for (int rowIndex = 0; rowIndex < rowCount; rowIndex++) {
+            matrix[rowIndex][0] = rowIndex;
+        }
+
+        for (int columnIndex = 0; columnIndex < columnCount; columnIndex++) {
+            matrix[0][columnIndex] = columnIndex;
+        }
+
+        for (int rowIndex = 1; rowIndex < matrix.length; rowIndex++) {
+            for (int columnIndex = 1; columnIndex < matrix[0].length; columnIndex++) {
+                char char1 = string1.charAt(rowIndex - 1);
+                char char2 = string2.charAt(columnIndex - 1);
+                if (char1 == char2) {
+                    matrix[rowIndex][columnIndex] = matrix[rowIndex - 1][columnIndex - 1];
+                } else {
+                    int left = matrix[rowIndex][columnIndex - 1];
+                    int up = matrix[rowIndex - 1][columnIndex];
+                    int leftUp = matrix[rowIndex - 1][columnIndex - 1];
+                    int distance = Math.min(left, up);
+                    distance = Math.min(distance, leftUp);
+                    matrix[rowIndex][columnIndex] = distance + 1;
+                }
+            }
+        }
+
+        return matrix[rowCount - 1][columnCount - 1];
+    }
 
     public static void main(String[] args) {
         String text = "hotel_13555_nlp.json 3.14";

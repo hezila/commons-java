@@ -34,16 +34,22 @@ public class BerkeleyDBFactory {
 	 * @param resumable
 	 *            whether resumable
 	 */
-	public static void init(final String storageFolder, final boolean resumable) {
+	public static void init(String storageFolder, final boolean resumable) {
+        System.out.println("Initialize the Berkeley DB ...");
 		EnvironmentConfig envConfig = new EnvironmentConfig();
 		envConfig.setAllowCreate(true);
 		envConfig.setTransactional(resumable);
 		envConfig.setLocking(resumable);
 
+        if (storageFolder == null) {
+            storageFolder = DEFAULT_STORAGE_FOLDER;
+        }
+
 		File envHome = new File(storageFolder + "/data");
 		if (!envHome.exists()) {
 			envHome.mkdir();
 		}
+
 		if (!resumable) {
 			FileUtils.deleteFolderContents(envHome);
 		}
@@ -74,7 +80,7 @@ public class BerkeleyDBFactory {
 		/*
 		 * support in-memory cache write
 		 */
-		dbConfig.setDeferredWrite(!resumable);
+		dbConfig.setDeferredWrite(true);
 
 		Database db = env.openDatabase(null, dbName, dbConfig);
 		return db;

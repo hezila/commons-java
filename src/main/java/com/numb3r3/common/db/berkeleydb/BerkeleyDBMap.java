@@ -28,9 +28,9 @@ public class BerkeleyDBMap<K, V> implements
 
 	private EntryBinding<V> valueBinding = null;
 
-	public BerkeleyDBMap(final String dbName, final boolean resumable,
+	public BerkeleyDBMap(final String dbName, final boolean reusable,
 			Class KClass, Class VClass) {
-		db = BerkeleyDBFactory.getDatabase(dbName, false, resumable);
+		db = BerkeleyDBFactory.getDatabase(dbName, false, reusable);
 
 		/*
 		 * Open the database that you use to store your class information. The
