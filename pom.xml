@@ -8,11 +8,18 @@
     <packaging>jar</packaging>
 
     <name>commons-java</name>
-    <url>http://maven.apache.org</url>
+
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
+
+    <scm>
+        <url>https://github.com/numb3r3/commons-java</url>
+        <connection>scm:git://github.com/numb3r3/commons-java.git</connection>
+        <developerConnection>scm:git:git@github.com/numb3r3/commons-java.git</developerConnection>
+        <tag>HEAD</tag>
+    </scm>
 
     <dependencies>
         <dependency>
