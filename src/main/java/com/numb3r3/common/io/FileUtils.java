@@ -110,6 +110,19 @@ public class FileUtils {
         }
     }
 
+    public static void touch_dir(String path) throws IOException {
+        File theDir = new File(path);
+        // if the directory does not exist, create it
+        if (!theDir.exists()) {
+
+            boolean success = (new File(path)).mkdirs();
+            if (!success) {
+                throw new IOException("Unable to create the fold " + path);
+            }
+        }
+
+    }
+
     public static String combine(final String... paths) {
         if (paths == null || paths.length == 0) {
             return null;
@@ -122,6 +135,17 @@ public class FileUtils {
         }
 
         return file.getPath();
+    }
+
+    /**
+     * Return all files beneath path.
+     *
+     * @param path      the path to search
+     * @param recursive iff true, search subdirectories too.
+     * @return
+     */
+    public static ArrayList<File> find(String path, Boolean recursive) {
+        return find(new File(path), recursive);
     }
 
     /**
