@@ -211,6 +211,15 @@ public class ArrayUtil {
         return result;
     }
 
+
+    public static double[] arrayMinus(double[] w, double[] v, double alpha) {
+        double result[] = w.clone();
+        for (int i = 0; i < w.length; i++) {
+            result[i] = w[i] + alpha * v[i];
+        }
+        return result;
+    }
+
     public static double[] negation(double[] w) {
         double result[] = new double[w.length];
         for (int i = 0; i < w.length; i++) {
