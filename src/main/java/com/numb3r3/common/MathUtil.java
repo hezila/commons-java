@@ -15,6 +15,15 @@ import java.util.Map;
 
 public class MathUtil {
 
+
+    public static boolean isZero(double value) {
+        if (-0.000000000000000000000001 < value
+                && value < 0.00000000000000000000000001) {
+            return true;
+        } else
+            return false;
+    }
+
     /**
      * The constant 1 / sqrt(2 pi)
      */

@@ -57,13 +57,6 @@ public class Utils {
         }
     }
 
-    public static boolean isZero(double value) {
-        if (-0.000000000000000000000001 < value
-                && value < 0.00000000000000000000000001) {
-            return true;
-        } else
-            return false;
-    }
 
     public static void showHelp(String command, Options options) {
         // automatically generate the help statement
@@ -86,7 +79,7 @@ public class Utils {
         int index = 0;
         for (double value : list) {
             array[index] = value;
-            index ++;
+            index++;
         }
         return array;
     }

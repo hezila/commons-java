@@ -212,7 +212,7 @@ public class ArrayUtil {
     }
 
 
-    public static double[] arrayMinus(double[] w, double[] v, double alpha) {
+    public static double[] arrayPlus(double[] w, double[] v, double alpha) {
         double result[] = w.clone();
         for (int i = 0; i < w.length; i++) {
             result[i] = w[i] + alpha * v[i];
