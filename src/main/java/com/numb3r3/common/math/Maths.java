@@ -70,6 +70,14 @@ public class Maths {
         return res;
     }
 
+    public static void normalize(double[] probs) {
+        double sum = Maths.sum(probs);
+        assert sum != 0.0;
+        for (int i = 0; i < probs.length; i++) {
+            probs[i] = probs[i] / sum;
+        }
+    }
+
     /**
      * Return a ramdom multinominal distribution.
      *
@@ -88,6 +96,14 @@ public class Maths {
             random[i] = random[i] / sum;
         }
         return random;
+    }
+
+    public static final double[] zeros(int size) {
+        double[] values = new double[size];
+        for (int i = 0; i < size; i++) {
+            values[i] = 0.0;
+        }
+        return values;
     }
 
 
