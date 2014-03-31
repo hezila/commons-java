@@ -1,6 +1,8 @@
 package com.numb3r3.common.math.stat;
 
 import com.numb3r3.common.MathUtil;
+import com.numb3r3.common.collection.ArrayUtil;
+import com.numb3r3.common.math.Maths;
 
 import java.util.Random;
 
@@ -135,6 +137,35 @@ public class RandomUtil {
             p *= uniform();
         } while (p >= L);
         return k - 1;
+    }
+
+    public static int[] multinomial(int n, double[] weights) {
+        int length = weights.length;
+        int[] counts = ArrayUtil.createIntArray(length, 0);
+
+        Maths.normalize(weights);
+
+
+        // cumulate multinomial parameters
+        for (int i = 1; i < length; i++) {
+            weights[i] += weights[i - 1];
+        }
+
+        for (int i = 0; i < n; i++) {
+            // scaled sample because of unnormalized p[]
+            double u = Math.random() * weights[length - 1];
+
+            int t = 0;
+
+            for (t = 0; t < length; t++) {
+                if (weights[t] > u) //sample topic w.r.t distribution p
+                    break;
+            }
+            counts[t]++;
+        }
+
+
+        return counts;
     }
 
     /**
