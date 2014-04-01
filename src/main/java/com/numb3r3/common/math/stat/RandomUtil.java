@@ -143,6 +143,8 @@ public class RandomUtil {
         int length = weights.length;
         int[] counts = ArrayUtil.createIntArray(length, 0);
 
+        //System.out.println("counts: " + counts.length);
+
         Maths.normalize(weights);
 
 
@@ -152,13 +154,13 @@ public class RandomUtil {
         }
 
         for (int i = 0; i < n; i++) {
-            // scaled sample because of unnormalized p[]
+
             double u = Math.random() * weights[length - 1];
 
             int t = 0;
 
             for (t = 0; t < length; t++) {
-                if (weights[t] > u) //sample topic w.r.t distribution p
+                if (weights[t] >= u) //sample topic w.r.t distribution p
                     break;
             }
             counts[t]++;
@@ -303,6 +305,15 @@ public class RandomUtil {
         }
     }
 
+    /**
+     * Assigns a random value to each element of the specified array of doubles.
+     */
+    public static void fillRandom(final double[] x, final Random rng) {
+        for (int i = 0; i < x.length; i++) {
+            x[i] = rng.nextDouble();
+        }
+    }
+
 
     /**
      * @param args
@@ -310,7 +321,14 @@ public class RandomUtil {
     public static void main(String[] args) {
         int[] samples = MathUtil.range(1000);
 
+        double[] weights = ArrayUtil.createDoubleArray(10, 1.0);
+        Maths.normalize(weights);
+        int[] counts = RandomUtil.multinomial(100, weights);
 
+        for (int i = 0; i < counts.length; i++) {
+            System.out.print(" " + counts[i]);
+        }
+        System.out.println();
         System.out.println("" + RandomUtil.uniform(-1.0, 1.0));
 
     }
