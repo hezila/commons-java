@@ -68,6 +68,17 @@ public class Index<E> extends AbstractList<E> {
         return true;
     }
 
+    @Override
+    public boolean remove(Object o) {
+        if (this.contains(o)) {
+            int i = this.indexes.get(o);
+            this.objects.remove(i);
+            this.indexes.remove(o);
+            return true;
+        }
+        return false;
+    }
+
     public Index() {
         objects = new ArrayList<E>();
         indexes = new HashMap<E, Integer>();
@@ -76,6 +87,10 @@ public class Index<E> extends AbstractList<E> {
     public Index(Collection<? extends E> c) {
         this();
         addAll(c);
+    }
+
+    public Set<E> keySet() {
+        return indexes.keySet();
     }
 
 }
