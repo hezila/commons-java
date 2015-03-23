@@ -287,9 +287,9 @@ public class Frequency<T> {
         try {
             for (String line : Files.readLines(new File(filename),
                     Charsets.UTF_8)) {
-
+                //System.out.println(line);
                 List<String> items = Lists.newArrayList();
-                for (String item : Splitter.on(" ").omitEmptyStrings()
+                for (String item : Splitter.on("\t").omitEmptyStrings()
                         .trimResults().split(line)) {
                     items.add(item);
                 }
@@ -301,10 +301,11 @@ public class Frequency<T> {
                     String item = items.get(1);
                     freq.set(
                             items.get(0),
-                            Double.parseDouble(items.get(1).substring(1,
+                            Double.parseDouble(items.get(1).substring(0,
                                     item.length() - 1)));
                 }
             }
+            //System.out.println("The size of the freq: " + freq.size());
             return freq;
         } catch (IOException e) {
             // TODO Auto-generated catch block

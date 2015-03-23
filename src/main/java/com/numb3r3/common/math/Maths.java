@@ -224,6 +224,13 @@ public class Maths {
         return -1.0 / (y + eulerGamma);
     }
 
+    public static double expSum(double[] values){
+        double sum = 0;
+        for(double v:values)
+            sum += Math.exp(v);
+        return sum;
+    }
+
 
     public static boolean equalWithinFPError(double a, double b) {
         if (a == b) {

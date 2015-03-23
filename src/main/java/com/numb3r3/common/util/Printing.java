@@ -1,5 +1,7 @@
 package com.numb3r3.common.util;
 
+import java.util.List;
+
 public class Printing {
     static java.text.DecimalFormat fmt = new java.text.DecimalFormat();
 
@@ -34,5 +36,12 @@ public class Printing {
         return sb.toString();
     }
 
+    public static String prettyIntArrayPrint(List<Integer> array) {
+        StringBuffer buffer = new StringBuffer();
+        for (int value : array) {
+            buffer.append(" " + value);
+        }
+        return buffer.toString().trim();
+    }
 
 }

@@ -10,6 +10,7 @@ import org.apache.commons.math.special.Gamma;
 
 import java.text.DecimalFormat;
 import java.text.NumberFormat;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 
@@ -97,6 +98,14 @@ public class MathUtil {
         return Math.sqrt(err);
     }
 
+    public static double std(double[] arrays, double mu) {
+        double err = 0.0;
+        for (double v : arrays) {
+            err += (v - mu) * (v - mu);
+        }
+        err = err / arrays.length;
+        return Math.sqrt(err);
+    }
     /*
      * given log(a) and log(b), return log(a + b)
      */
@@ -300,6 +309,49 @@ public class MathUtil {
         }
         System.out.println("}");
 
+    }
+
+    public static Matrix covariance(Matrix values) {
+        int m = values.getRowsNum();
+        int n = values.getColumnsNum();
+        Matrix cov = new InMemoryJBlasMatrix(n, n);
+
+        double[] mean = new double[values.getColumnsNum()];
+        Arrays.fill(mean, 0);
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j< n; j++) {
+                mean[j] += values.get(i, j);
+            }
+        }
+
+        for (int j = 0; j < n; j++) {
+            mean[j] = mean[j]/m;
+        }
+
+        for (int i = 0; i < m; i++) {
+            double[] dialog = new double[n];
+            Arrays.fill(dialog, 0);
+            for (int j = 0; j < n; j++) {
+                dialog[j] = values.get(i, j) - mean[j];
+            }
+
+            for (int k = 0; k < n; k++) {
+                for (int j = 0; j < n; j++) {
+                    double old = cov.get(k, j);
+                    old += dialog[k] * dialog[j];
+                    cov.put(k, j, old);
+                }
+            }
+        }
+
+        for (int j = 0; j < n; j++) {
+            for (int k = 0; k< n; k++) {
+                double cov_v = cov.get(j, k);
+                cov_v = (1.0 + cov_v)/(m + 1.0);
+                cov.put(j, k, cov_v);
+            }
+        }
+        return cov;
     }
 
 

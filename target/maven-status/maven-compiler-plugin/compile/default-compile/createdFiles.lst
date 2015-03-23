@@ -1,0 +1,12 @@
+com/numb3r3/common/data/SparseVector$1.class
+com/numb3r3/common/data/DenseVector.class
+com/numb3r3/common/data/SparseMatrix$MatrixIterator.class
+com/numb3r3/common/data/DenseMatrix.class
+com/numb3r3/common/data/SparseMatrix.class
+com/numb3r3/common/data/SparseVector.class
+com/numb3r3/common/data/SparseMatrix$SparseMatrixEntry.class
+com/numb3r3/common/data/MatrixEntry.class
+com/numb3r3/common/data/SparseVector$SparseVecIterator.class
+com/numb3r3/common/data/VectorEntry.class
+com/numb3r3/common/data/SparseVector$SparseVecEntry.class
+com/numb3r3/common/data/SparseMatrix$1.class

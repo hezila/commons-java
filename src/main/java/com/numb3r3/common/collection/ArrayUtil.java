@@ -92,14 +92,7 @@ public class ArrayUtil {
         return y;
     }
 
-    /**
-     * Assigns a random value to each element of the specified array of doubles.
-     */
-    public static void fillRandom(final double[] x, final Random rng) {
-        for (int i = 0; i < x.length; i++) {
-            x[i] = rng.nextDouble();
-        }
-    }
+
 
     /**
      * Returns true if <code>element</code> is in <code>array</code>.
@@ -419,7 +412,7 @@ public class ArrayUtil {
      */
     public static void main(String[] args) {
         double[] tests = new double[10];
-        ArrayUtil.fillRandom(tests, new Random());
+        //ArrayUtil.fillRandom(tests, new Random());
 
         int[] sorts = ArrayUtil.argsort(tests, false);
         for (int i = 0; i < 10; i++) {

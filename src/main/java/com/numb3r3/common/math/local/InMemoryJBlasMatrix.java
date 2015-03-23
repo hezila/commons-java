@@ -6,10 +6,7 @@ package com.numb3r3.common.math.local;
 import com.google.common.base.Charsets;
 import com.google.common.base.Splitter;
 import com.google.common.io.Files;
-import com.numb3r3.common.ErrorProcessor;
-import com.numb3r3.common.Pair;
-import com.numb3r3.common.SystemErrorProcessor;
-import com.numb3r3.common.Utils;
+import com.numb3r3.common.*;
 import com.numb3r3.common.math.Matrix;
 import org.jblas.DoubleMatrix;
 
@@ -529,7 +526,7 @@ public class InMemoryJBlasMatrix implements Matrix {
 
     @Override
     public void divi(double scalar) {
-        if (!Utils.isZero(scalar)) {
+        if (!MathUtil.isZero(scalar)) {
             this.getData().divi(scalar);
         } else {
             errorProcessor
@@ -540,7 +537,7 @@ public class InMemoryJBlasMatrix implements Matrix {
 
     @Override
     public Matrix div(double scalar) {
-        if (!Utils.isZero(scalar)) {
+        if (!MathUtil.isZero(scalar)) {
             Matrix dump = this.dup();
             ((DoubleMatrix) dump.getData()).divi(scalar);
             return dump;
